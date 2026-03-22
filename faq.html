@@ -1,135 +1,316 @@
- <!DOCTYPE html>
- <html lang="en">
- <head>
-   <meta charset="UTF-8" />
-   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   <title>J'Adore Lips | FAQs</title>
-   <link rel="stylesheet" href="css/styles.css" />
-   <meta name="description" content="Frequently asked questions about J'Adore Lips Cosmetics." />
-   <meta name="robots" content="index, follow" />
- </head>
- <body>
-   <header class="site-header">
-     <div class="container header-container">
-       <a href="index.html" class="logo">
-         <img src="images/Branding-removebg-preview.png" alt="J'Adore Lips Logo"/>
-       </a>
- 
-       <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
-         <span class="nav-toggle-bar"></span>
-         <span class="nav-toggle-bar"></span>
-         <span class="nav-toggle-bar"></span>
-       </button>
- 
-       <nav class="navbar">
-         <ul class="nav-links">
-           <li><a href="index.html">Home</a></li>
-           <li><a href="products.html">Products</a></li>
-           <li><a href="contact.html">Contact</a></li>
-           <li><a href="faq.html">FAQs</a></li>
-         </ul>
-       </nav>
- 
-       <a href="index.html#featured-product" class="btn nav-btn">Shop Now</a>
-     </div>
- 
-     <div class="mobile-menu" id="mobile-menu" hidden>
-       <div class="container">
-         <nav class="mobile-nav" aria-label="Mobile">
-           <a href="index.html">Home</a>
-           <a href="products.html">Products</a>
-           <a href="contact.html">Contact</a>
-           <a href="faq.html">FAQs</a>
-           <a href="index.html#featured-product" class="btn mobile-cta">Shop Now</a>
-         </nav>
-       </div>
-     </div>
-   </header>
- 
-   <main>
-     <section class="page-hero page-hero-compact">
-       <div class="container page-hero-container">
-         <div class="page-hero-text">
-           <p class="eyebrow">Help</p>
-           <h1>FAQs</h1>
-           <p class="page-hero-description">Answers to common questions about the lip plumper, shipping, and support.</p>
-         </div>
- 
-         <div class="page-hero-media">
-           <img src="images/Products.PNG" alt="J'Adore Lips product" />
-         </div>
-       </div>
-     </section>
- 
-     <section class="faq-page">
-       <div class="container">
-         <div class="section-heading">
-           <p class="eyebrow">Frequently Asked</p>
-           <h2>Common Questions</h2>
-         </div>
- 
-         <div class="faq-list">
-           <article class="faq-item">
-             <h3>How do I use the lip plumper?</h3>
-             <p>Apply directly to clean lips. Wear alone for a glossy look or layer over lip liner or lipstick for extra shine.</p>
-           </article>
- 
-           <article class="faq-item">
-             <h3>Will it feel tingly?</h3>
-             <p>Some plumpers can create a light tingling sensation. If you have sensitive skin, patch test first and discontinue use if irritation occurs.</p>
-           </article>
- 
-           <article class="faq-item">
-             <h3>How long does shipping take?</h3>
-             <p>Shipping times depend on your location and the method selected at checkout. You’ll receive tracking details once your order ships.</p>
-           </article>
- 
-           <article class="faq-item">
-             <h3>Do you accept returns?</h3>
-             <p>If there’s an issue with your order, contact us and we’ll help you out. For hygiene reasons, opened cosmetics may have limitations—reach out and we’ll confirm your options.</p>
-           </article>
- 
-           <article class="faq-item">
-             <h3>How can I contact support?</h3>
-             <p>Email us at <a class="inline-link" href="mailto:jadorelips90@gmail.com">jadorelips90@gmail.com</a> or use the contact form.</p>
-           </article>
-         </div>
- 
-         <div class="faq-action">
-           <a href="contact.html" class="btn">Contact Support</a>
-         </div>
-       </div>
-     </section>
-   </main>
- 
-   <footer class="site-footer">
-     <div class="container footer-container">
-       <div class="footer-brand">
-         <img src="images/Branding-removebg-preview.png" alt="J'Adore Lips Cosmetics Logo" class="logo" />
-         <p>Luxury lip beauty designed to shine.</p>
-       </div>
- 
-       <div class="footer-links">
-         <h3>Quick Links</h3>
-         <ul>
-           <li><a href="index.html">Home</a></li>
-           <li><a href="products.html">Products</a></li>
-           <li><a href="contact.html">Contact</a></li>
-           <li><a href="faq.html">FAQs</a></li>
-         </ul>
-       </div>
- 
-       <div class="footer-contact">
-         <h3>Contact</h3>
-         <p>Email: <a href="mailto:jadorelips90@gmail.com">jadorelips90@gmail.com</a></p>
-       </div>
-     </div>
- 
-     <div class="footer-bottom">
-       <p>&copy; 2026 J'Adore Lips Cosmetics. All rights reserved.</p>
-     </div>
-   </footer>
- 
-   <script src="js/main.js"></script>
- </body>
- </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>J'Adore Lips | FAQs</title>
+  <meta name="description" content="Frequently asked questions about J'Adore Lips — shipping, returns, product use, and more." />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" type="image/png" href="favicon_io/favicon.ico" />
+</head>
+<body>
+
+  <div class="announcement-bar" aria-label="Promotions">
+    <div class="announcement-track" aria-hidden="true">
+      <span>Free U.S. Shipping on Orders Over $50</span>
+      <span>&nbsp;&bull;&nbsp;</span>
+      <span>Become a Beauty VIP &mdash; 15% Off Your First Order</span>
+      <span>&nbsp;&bull;&nbsp;</span>
+      <span>30-Day Satisfaction Guarantee</span>
+      <span>&nbsp;&bull;&nbsp;</span>
+      <span>Free U.S. Shipping on Orders Over $50</span>
+      <span>&nbsp;&bull;&nbsp;</span>
+      <span>Become a Beauty VIP &mdash; 15% Off Your First Order</span>
+      <span>&nbsp;&bull;&nbsp;</span>
+      <span>30-Day Satisfaction Guarantee</span>
+      <span>&nbsp;&bull;&nbsp;</span>
+    </div>
+  </div>
+
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <div class="header-logo">
+        <a href="index.html">
+          <img src="images/Branding-removebg-preview.png" alt="J'Adore Lips" />
+        </a>
+      </div>
+      <nav class="header-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="faq.html">FAQs</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <button aria-label="Search">
+          <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="22" y2="22"/></svg>
+        </button>
+        <!-- Bag Button -->
+        <div class="bag-wrapper">
+          <button id="bag-btn" aria-label="Bag" title="Shopping Bag">
+            <svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+          </button>
+          <!-- Bag Count -->
+          <span id="bag-count">0</span>
+        </div>
+        <button class="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu" id="hamburger">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Navigation">
+    <div class="mobile-menu-header">
+      <img src="images/Branding-removebg-preview.png" alt="J'Adore Lips" style="height:44px;object-fit:contain;" />
+      <button class="mobile-menu-close" id="mobile-menu-close" aria-label="Close menu">
+        <svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+    <nav class="mobile-nav" aria-label="Mobile">
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="contact.html">Contact</a>
+      <a href="faq.html">FAQs</a>
+    </nav>
+    <div class="mobile-menu-cta">
+      <a href="products.html" class="btn" style="width:100%;justify-content:center;">Shop Now</a>
+    </div>
+  </div>
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <div class="container">
+      <span class="section-label">Help Center</span>
+      <h1>FAQs</h1>
+      <p>Everything you need to know about ditching the needle and switching to J'Adore Lips.</p>
+    </div>
+  </div>
+
+  <!-- Before / After Section -->
+  <section class="before-after-section">
+    <div class="container">
+      <div class="before-after-wrap">
+
+        <div style="text-align:center;">
+          <span class="section-label" style="color:rgba(0,0,0,0.4);">See the Difference</span>
+          <h2 style="font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(2rem,3.5vw,2.8rem);font-weight:300;letter-spacing:0.08em;text-transform:uppercase;color:var(--black);margin-top:.5rem;">Before &amp; After</h2>
+        </div>
+
+        <div style="position:relative;width:100%;max-width:820px;">
+          <div class="before-after-panel">
+            <div class="ba-side before">
+              <img src="images/ChatGPT Image Mar 21, 2026, 07_58_45 PM.png" alt="Before using J'Adore Lips Lip Plumper" />
+              <span class="ba-label">Before</span>
+            </div>
+            <div class="ba-side after">
+              <img src="images/ChatGPT Image Mar 21, 2026, 07_58_47 PM.png" alt="After using J'Adore Lips Lip Plumper" />
+              <span class="ba-label">After</span>
+            </div>
+          </div>
+          <div class="ba-divider"></div>
+        </div>
+
+        <div class="before-after-desc">
+          <h3>The Switch from Filler to Formula.</h3>
+          <p>Thousands of women have already made the switch. No needles. No appointments. No bruising. Just hyaluronic acid, vitamin E, and peppermint oil working together to give you visibly fuller, juicier lips — in one swipe.</p>
+          <div style="margin-top:.5rem;">
+            <a href="products.html" class="btn btn-dark">Shop Lip Plumper &mdash; $24.99</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Content (white) -->
+  <section class="page-content" style="padding:5rem 0 7rem;">
+    <div class="container">
+      <div class="faq-layout">
+
+        <div class="faq-sidebar">
+          <h2>Common<br/>Questions</h2>
+          <p style="margin-top:2rem;font-size:.82rem;font-weight:300;letter-spacing:.04em;color:rgba(0,0,0,0.5);line-height:1.7;">Can't find your answer? <a href="contact.html" style="color:#000;border-bottom:1px solid rgba(0,0,0,0.3);">Contact us</a> directly.</p>
+        </div>
+
+        <div class="faq-list" id="faq-list">
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              How do I use the J'Adore Lips Plumper?
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer" role="region">
+              <div class="faq-answer-inner">
+                Apply directly to clean, dry lips for best results. Wear it alone for a glossy, plumped look — or layer it over your favorite lip liner or lipstick for extra dimension and shine. You can also exfoliate your lips first to remove any dry skin, which helps the formula absorb more effectively and maximizes the plumping effect. Reapply throughout the day as desired.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              Will I feel a tingling sensation?
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer" role="region">
+              <div class="faq-answer-inner">
+                Yes — and that tingle means it's working! The peppermint oil in our formula creates a mild, satisfying tingle that signals the plumping effect is active. It's completely normal and one of the signs that the formula is doing its job. If you have sensitive skin, we recommend a patch test before full use.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              How long does shipping take?
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer" role="region">
+              <div class="faq-answer-inner">
+                Standard U.S. shipping takes 5&ndash;7 business days. Expedited options are available at checkout. International orders typically arrive within 10&ndash;21 business days depending on location. You'll receive tracking details once your order ships.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              Do you offer free shipping?
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer" role="region">
+              <div class="faq-answer-inner">
+                Yes — we offer free standard U.S. shipping on all orders over $50. Free shipping is automatically applied at checkout when your cart qualifies.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              What is your return policy?
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer" role="region">
+              <div class="faq-answer-inner">
+                We stand behind our products with a 30-day satisfaction guarantee. If you're not happy with your purchase, contact us within 30 days and we'll make it right. Due to the nature of cosmetics, we cannot accept returns on opened products, but we'll always work with you to find a resolution.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              Is the lip plumper safe for sensitive skin?
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer" role="region">
+              <div class="faq-answer-inner">
+                Our formula is thoughtfully crafted with skin-loving ingredients — hyaluronic acid, vitamin E, and peppermint oil. It's designed to be gentle and non-invasive, making it a safe daily alternative to lip injections. However, we always recommend a patch test for those with known sensitivities. Consult your dermatologist if you have specific concerns.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              What ingredients are in the lip plumper?
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer" role="region">
+              <div class="faq-answer-inner">
+                Our signature formula is built around three hero ingredients: <strong>Hyaluronic Acid</strong> — the same ingredient used in professional lip fillers — to attract moisture and create instant volume; <strong>Vitamin E</strong> to nourish, soften, and condition lips with every use; and <strong>Peppermint Oil</strong> to stimulate blood flow for a natural plumping effect and that iconic tingle. Clean, non-invasive, and designed for daily use.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              How is this different from getting lip filler injections?
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer" role="region">
+              <div class="faq-answer-inner">
+                Lip filler injections are expensive, painful, require a medical professional, and come with downtime and potential bruising. J'Adore Lips gives you instant fullness and a high-shine gloss — no needles, no appointments, no recovery. It's your at-home alternative for luscious lips on your schedule, at a fraction of the cost.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              How can I contact customer support?
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer" role="region">
+              <div class="faq-answer-inner">
+                You can reach us via email at <a href="mailto:jadorelips90@gmail.com" style="color:#000;border-bottom:1px solid rgba(0,0,0,0.3);">jadorelips90@gmail.com</a> or through our <a href="contact.html" style="color:#000;border-bottom:1px solid rgba(0,0,0,0.3);">Contact page</a>. We respond within 24&ndash;48 business hours.
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Band -->
+  <section style="background:var(--black);padding:4rem 0;border-top:1px solid var(--border);">
+    <div class="container" style="text-align:center;">
+      <span class="section-label" style="display:block;margin-bottom:1rem;">Still Have Questions?</span>
+      <h2 style="font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(1.8rem,3vw,2.6rem);font-weight:300;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:2rem;">We're Here to Help</h2>
+      <a href="contact.html" class="btn btn-outline">Contact Us</a>
+    </div>
+  </section>
+
+  <!-- Marquee Dark -->
+  <div class="marquee-band dark" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Worldwide Shipping</span><span>&nbsp;&nbsp;&nbsp;</span>
+      <span>Worldwide Shipping</span><span>&nbsp;&nbsp;&nbsp;</span>
+      <span>Worldwide Shipping</span><span>&nbsp;&nbsp;&nbsp;</span>
+      <span>Worldwide Shipping</span><span>&nbsp;&nbsp;&nbsp;</span>
+      <span>Worldwide Shipping</span><span>&nbsp;&nbsp;&nbsp;</span>
+      <span>Worldwide Shipping</span><span>&nbsp;&nbsp;&nbsp;</span>
+    </div>
+  </div>
+
+  <footer class="site-footer" aria-label="Site Footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="images/Branding-removebg-preview.png" alt="J'Adore Lips" />
+          <p>Luxury lip beauty designed to shine.</p>
+          <div class="footer-social" style="margin-top:1.5rem;">
+            <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg></a>
+            <a href="#" aria-label="TikTok"><svg viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.32 6.32 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.79 1.54V6.79a4.85 4.85 0 01-1.02-.1z"/></svg></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Shop</h4>
+          <ul>
+            <li><a href="products.html">Lip Plumper</a></li>
+            <li><a href="products.html">All Products</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Reach Us</h4>
+          <ul>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="faq.html">FAQs</a></li>
+            <li><a href="mailto:jadorelips90@gmail.com">jadorelips90@gmail.com</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Subscribe for updates</h4>
+          <form class="footer-newsletter-form" action="#" method="post" onsubmit="return false;">
+            <input type="email" placeholder="Your email" required aria-label="Email" />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 J'Adore Lips Cosmetics. All rights reserved.</p>
+        <p>Crafted with intention.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
