@@ -59,9 +59,11 @@
 
         <!-- Bag Button -->
         <div class="bag-wrapper">
-          <button id="bag-btn" aria-label="Bag" title="Shopping Bag">
-            <svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
-          </button>
+          <a href="checkout.html">
+            <button id="bag-btn" aria-label="Bag" title="Shopping Bag">
+              <svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+            </button>
+          </a>
 
           <!-- Bag Count -->
           <span id="bag-count">0</span>
@@ -156,7 +158,7 @@
               &mdash;&nbsp; Shopify Buy Button &mdash; Add Your Embed Code Here &nbsp;&mdash;
             </div>
             <div style="margin-top:1.5rem;">
-              <a href="#" class="btn" style="margin-right:.75rem;">Add to Bag &mdash; $34.99</a>
+              <a href="#" class="btn add-to-bag" style="margin-right:.75rem;">Add to Bag &mdash; $34.99</a>
               <a href="products.html" class="btn btn-outline">See All Products</a>
             </div>
           </div>
@@ -271,5 +273,6 @@
   </footer>
 
   <script src="js/main.js"></script>
+  <script src="js/cart.js"></script>
 </body>
 </html>
