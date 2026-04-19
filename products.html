@@ -46,16 +46,23 @@
         <button aria-label="Search">
           <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="22" y2="22"/></svg>
         </button>
-        <!-- Bag Button -->
-        <div class="bag-wrapper">
-          <a href="checkout.html">
-            <button id="bag-btn" aria-label="Bag" title="Shopping Bag">
-              <svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
-            </button>
-          </a>
-          <!-- Bag Count -->
-          <span id="bag-count">0</span>
-        </div>
+      <div class="bag-wrapper">
+        <button
+          id="bag-btn"
+          class="header-bag-trigger"
+          aria-label="Bag"
+          title="Shopping Bag"
+          type="button"
+        >
+          <svg viewBox="0 0 24 24">
+            <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <path d="M16 10a4 4 0 01-8 0"/>
+          </svg>
+        </button>
+
+        <span id="bag-count">0</span>
+      </div>
         <button class="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu" id="hamburger">
           <span></span><span></span><span></span>
         </button>
@@ -114,12 +121,185 @@
             <li class="featured-feature" style="color:rgba(0,0,0,0.6);">Peppermint oil &mdash; the signature plumping tingle</li>
             <li class="featured-feature" style="color:rgba(0,0,0,0.6);">High-shine mirror gloss &mdash; fuller lips on sight</li>
           </ul>
-          <div class="shopify-placeholder" style="border-color:rgba(0,0,0,0.12);color:rgba(0,0,0,0.4);">
-            &mdash;&nbsp; Shopify Buy Button &mdash; Add Your Embed Code Here &nbsp;&mdash;
-          </div>
-          <div style="margin-top:1.5rem;">
-            <a href="#" class="btn btn-dark add-to-bag">Add to Bag &mdash; $34.99</a>
-          </div>
+          <div id="product-component-1776472651130">
+								<script type="text/javascript">
+									/*<![CDATA[*/
+									(function () {
+										var scriptURL =
+											"https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js";
+										if (window.ShopifyBuy) {
+											if (window.ShopifyBuy.UI) {
+												ShopifyBuyInit();
+											} else {
+												loadScript();
+											}
+										} else {
+											loadScript();
+										}
+										function loadScript() {
+											var script = document.createElement("script");
+											script.async = true;
+											script.src = scriptURL;
+											(
+												document.getElementsByTagName("head")[0] ||
+												document.getElementsByTagName("body")[0]
+											).appendChild(script);
+											script.onload = ShopifyBuyInit;
+										}
+										function ShopifyBuyInit() {
+											var client = ShopifyBuy.buildClient({
+												domain: "metqis-e3.myshopify.com",
+												storefrontAccessToken:
+													"130194f125930ad07331c7aa2123eb0b",
+											});
+											ShopifyBuy.UI.onReady(client).then(function (ui) {
+												ui.createComponent("product", {
+													id: "8910041415847",
+													node: document.getElementById(
+														"product-component-1776472651130",
+													),
+													moneyFormat: "%24%7B%7Bamount%7D%7D",
+													options: {
+                            product: {
+                              styles: {
+                                product: {
+                                  "@media (min-width: 601px)": {
+                                    "max-width": "100%",
+                                    "margin-left": "0",
+                                    "margin-bottom": "0"
+                                  },
+                                  "background-color": "transparent",
+                                  "padding": "0",
+                                  "box-shadow": "none"
+                                },
+                                title: {
+                                  "color": "#f5f5f5",
+                                  "font-size": "22px",
+                                  "font-weight": "600",
+                                  "letter-spacing": "0.5px",
+                                  "margin-top": "18px",
+                                  "margin-bottom": "10px"
+                                },
+                                price: {
+                                  "color": "#cfcfcf",
+                                  "font-size": "18px",
+                                  "margin-top": "0",
+                                  "margin-bottom": "18px"
+                                },
+                                description: {
+                                  "color": "#b8b8b8",
+                                  "font-size": "14px",
+                                  "line-height": "1.7"
+                                },
+                                button: {
+                                  "background-color": "#f5f5f5",
+                                  "color": "#111111",
+                                  "font-size": "13px",
+                                  "font-weight": "600",
+                                  "letter-spacing": "2px",
+                                  "text-transform": "uppercase",
+                                  "padding": "16px 28px",
+                                  "border": "1px solid #f5f5f5",
+                                  "border-radius": "0",
+                                  ":hover": {
+                                    "background-color": "transparent",
+                                    "color": "#111111",
+                                    "border": "1px solid #111111"
+                                  },
+                                  ":focus": {
+                                    "background-color": "transparent",
+                                    "color": "#f5f5f5",
+                                    "border": "1px solid #f5f5f5"
+                                  }
+                                }
+                              },
+                              buttonDestination: "cart",
+                              contents: {
+                                img: false,
+                                title: false,
+                                price: false,
+                                description: false,
+                                button: true,
+                                buttonWithQuantity: false
+                              },
+                              text: {
+                                button: "Add to Bag — $34.99"
+                              }
+                            },
+                            productSet: {
+                              styles: {
+                                products: {
+                                  "@media (min-width: 601px)": {
+                                    "margin-left": "0"
+                                  }
+                                }
+                              }
+                            },
+                            modalProduct: {
+                              contents: {
+                                img: false,
+                                imgWithCarousel: true,
+                                button: false,
+                                buttonWithQuantity: true
+                              },
+                              styles: {
+                                product: {
+                                  "@media (min-width: 601px)": {
+                                    "max-width": "100%",
+                                    "margin-left": "0px",
+                                    "margin-bottom": "0px"
+                                  }
+                                }
+                              },
+                              text: {
+                                button: "Add to cart"
+                              }
+                            },
+                            option: {},
+                            cart: {
+                              text: {
+                                total: "Subtotal",
+                                button: "Checkout"
+                              },
+                              styles: {
+                                button: {
+                                  "background-color": "#f5f5f5",
+                                  "color": "#111111",
+                                  "border": "1px solid #f5f5f5",
+                                  "border-radius": "0",
+                                  "text-transform": "uppercase",
+                                  "letter-spacing": "2px",
+                                  ":hover": {
+                                    "background-color": "#111111",
+                                    "color": "#111111"
+                                  },
+                                  ":focus": {
+                                    "background-color": "#111111",
+                                    "color": "#111111"
+                                  }
+                                }
+                              }
+                            },
+                            toggle: {
+                              styles: {
+                                toggle: {
+                                  "background-color": "#111111",
+                                  ":hover": {
+                                    "background-color": "#222222"
+                                  },
+                                  ":focus": {
+                                    "background-color": "#222222"
+                                  }
+                                }
+                              }
+                            }
+                          },
+												});
+											});
+										}
+									})();
+									/*]]>*/
+								</script>
         </div>
 
       </div>
@@ -182,6 +362,5 @@
   </footer>
 
   <script src="js/main.js"></script>
-  <script src="js/cart.js"></script>
 </body>
 </html>

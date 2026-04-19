@@ -164,6 +164,11 @@ button { cursor: pointer; font-family: inherit; }
     font-weight: 600;
 }
 
+/* shopify-buy */
+.shopify-buy__cart-toggle {
+  display: none !important;
+}
+
 /* ─── MOBILE MENU ─── */
 .mobile-menu {
   position: fixed;

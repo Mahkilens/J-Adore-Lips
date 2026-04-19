@@ -48,12 +48,19 @@
         </button>
         <!-- Bag Button -->
         <div class="bag-wrapper">
-          <a href="checkout.html">
-            <button id="bag-btn" aria-label="Bag" title="Shopping Bag">
-              <svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
-            </button>
-          </a>
-          <!-- Bag Count -->
+          <button
+            id="bag-btn"
+            class="header-bag-trigger"
+            aria-label="Bag"
+            title="Shopping Bag"
+            type="button"
+          >
+            <svg viewBox="0 0 24 24">
+              <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
+              <line x1="3" y1="6" x2="21" y2="6"/>
+              <path d="M16 10a4 4 0 01-8 0"/>
+            </svg>
+          </button>
           <span id="bag-count">0</span>
         </div>
         <button class="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu" id="hamburger">
@@ -314,6 +321,5 @@
   </footer>
 
   <script src="js/main.js"></script>
-  <script src="js/cart.js"></script>
 </body>
 </html>
